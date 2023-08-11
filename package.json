@@ -1,0 +1,17 @@
+{
+  "name": "twitch-pong-overlay",
+  "version": "1.0.0",
+  "description": "A Pong game overlay for OBS that can be controlled via Xbox 360 controllers and Twitch chat commands.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "socket.io": "^4.0.1",
+    "tmi.js": "^1.8.5"
+  }
+}
