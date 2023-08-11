@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
@@ -11,7 +12,11 @@ const io = socketIo(server);
 app.use(express.static('public'));
 
 const client = new tmi.Client({
-    channels: ['yourchannelname'] // Replace with your Twitch channel name
+    identity: {
+        username: process.env.TWITCH_BOT_USERNAME,
+        password: process.env.TWITCH_BOT_TOKEN
+    },
+    channels: [process.env.TWITCH_CHANNEL]
 });
 
 client.connect();
@@ -39,3 +44,4 @@ io.on('connection', (client) => {
 });
 
 server.listen(3000, () => console.log('Server running on http://localhost:3000'));
+
