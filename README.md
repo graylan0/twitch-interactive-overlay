@@ -9,7 +9,7 @@ A Pong game overlay for OBS that can be controlled via Xbox 360 controllers and 
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/yourusername/twitch-pong-overlay.git`
+1. Clone the repository: `git clone https://github.com/graylan0/twitch-pong-overlay.git`
 2. Navigate to the project folder: `cd twitch-pong-overlay`
 3. Install dependencies: `npm install`
 4. Start the server: `node server.js`
