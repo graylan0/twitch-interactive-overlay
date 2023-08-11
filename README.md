@@ -1,8 +1,6 @@
 # twitch-pong-overlay
 A Pong game overlay for OBS that can be controlled via Xbox 360 controllers and Twitch chat commands.
 
-A Pong game overlay for OBS that can be controlled via Xbox 360 controllers and Twitch chat commands.
-
 ## Features
 
 - Play Pong directly in Twitch chat.
