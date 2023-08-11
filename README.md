@@ -1,6 +1,8 @@
 # twitch-pong-overlay
 A Pong game overlay for OBS that can be controlled via Xbox 360 controllers and Twitch chat commands.
 
+A Pong game overlay for OBS that can be controlled via Xbox 360 controllers and Twitch chat commands.
+
 ## Features
 
 - Play Pong directly in Twitch chat.
@@ -12,9 +14,11 @@ A Pong game overlay for OBS that can be controlled via Xbox 360 controllers and 
 1. Clone the repository: `git clone https://github.com/graylan0/twitch-pong-overlay.git`
 2. Navigate to the project folder: `cd twitch-pong-overlay`
 3. Install dependencies: `npm install`
-4. Start the server: `node server.js`
-5. Add the game to OBS as a browser source with the URL `http://localhost:3000`.
-
+4. Create a `.env` file in the root directory with the following content:
+   ```env
+   TWITCH_BOT_USERNAME=your_bot_username
+   TWITCH_BOT_TOKEN=oauth:your_bot_token
+   TWITCH_CHANNEL=your_channel_name
 ## Usage
 
 - Twitch chat commands: `!upa`, `!downa`, `!upb`, `!downb` to control the paddles.
